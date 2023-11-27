@@ -1,0 +1,20 @@
+server:
+  port: 51803
+spring:
+  application:
+    name: leadnews-wemedia
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.12.128:8848
+      config:
+        server-addr: 192.168.12.128:8848
+        file-extension: yml
+
+
+minio:
+  accessKey: minio
+  secretKey: minio123
+  bucket: leadnews
+  endpoint: http://192.168.12.128:9000
+  readPath: http://192.168.12.128:9000
